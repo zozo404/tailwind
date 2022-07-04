@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
     <h1 class="text-3xl font-bold underline pb-6 ml-6 mt-6">
         Hello world!
     </h1>
@@ -36,6 +36,7 @@
           <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
         </div>
       </div>
+      <hr class="my-6">
       <form class="p-7 bg-white my-7 mx-5 rounded-xl">
         <label class="block">
           <span class="block text-sm font-medium text-slate-700">Username</span>
@@ -62,9 +63,74 @@
             invalid:border-pink-500 invalid:text-pink-600
             focus:invalid:border-pink-500 focus:invalid:ring-pink-500
           "/>
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Email
+            </span>
+            <input type="email" name="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+          </label>
         </label>
         <!-- ... -->
       </form>
+      <hr class="my-6">
+
+      <a href="#" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+          <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
+        </div>
+        <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+      </a>
+      <hr class="my-6">
+      <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+        Je suis
+        <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500  relative inline-block">
+          <span class="relative text-white">Enzo</span>
+        </span>
+        , le meilleur de tous.
+      </blockquote>
+      <hr class="my-6">
+      <label class="relative block m-6">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        </span>
+        <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+      </label>
+      <hr class="my-6">
+      <form class="flex items-center space-x-6 m-6 bg-white rounded-xl">
+        <div class="shrink-0">
+          <img class="h-16 w-16 object-cover rounded-full" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80" alt="Current profile photo" />
+        </div>
+        <label class="block">
+          <span class="sr-only">Choose profile photo</span>
+          <input type="file" class="block w-full text-sm text-slate-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-violet-50 file:text-white-700
+            hover:file:bg-violet-700 hover:file:text-white
+          "/>
+        </label>
+      </form>
+      <hr class="my-6">
+      <form class="flex items-center space-x-6 m-6 bg-white rounded-xl p-6">
+        <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500">
+            <li>5 cups chopped Porcini mushrooms</li>
+            <li>1/2 cup of olive oil</li>
+            <li>3lb of celery</li>
+          </ul>
+      </form>
+      <hr class="my-6">
+      <p class="first-line:uppercase first-line:tracking-widest
+        first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+        first-letter:mr-3 first-letter:float-left items-center space-x-6 m-6 bg-white rounded-xl p-6
+        ">
+        Well, let me tell you something, funny boy. Y'know that little stamp, the one
+        that says "New York Public Library"? Well that may not mean anything to you,
+        but that means a lot to me. One whole hell of a lot.
+      </p>
+      <hr class="my-6">
 
 </body>
 </html>
