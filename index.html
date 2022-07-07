@@ -17,7 +17,7 @@
           <img class="h-12 w-12" src="chat.jpg" alt="Logo">
         </div>
         <div>
-          <div class="text-xl font-medium text-black">ChitChat</div>
+          <div class="text-xl font-mediumm text-black">ChitChat</div>
           <p class="text-slate-500">You have a new message!</p>
         </div>
       </div>
@@ -29,7 +29,7 @@
             <p class="text-lg text-black font-semibold">
               Erin Lindford
             </p>
-            <p class="text-slate-500 font-medium">
+            <p class="text-slate-500 font-mediumm">
               Product Engineer
             </p>
           </div>
@@ -39,7 +39,7 @@
       <hr class="my-6">
       <form class="p-7 bg-white my-7 mx-5 rounded-xl">
         <label class="block">
-          <span class="block text-sm font-medium text-slate-700">Username</span>
+          <span class="block text-sm font-mediumm text-slate-700">Username</span>
           <!-- Using form state modifers, the classes can be identical for every input -->
           <input type="text" value="tbone" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
             focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
@@ -47,7 +47,7 @@
             invalid:border-pink-500 invalid:text-pink-600
             focus:invalid:border-pink-500 focus:invalid:ring-pink-500
           "/>
-          <span class="block text-sm font-medium text-slate-700">Mail</span>
+          <span class="block text-sm font-mediumm text-slate-700">Mail</span>
           <!-- Using form state modifers, the classes can be identical for every input -->
           <input type="text" value="tbone" minlength="5" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
             focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
@@ -55,7 +55,7 @@
             invalid:border-yellow-500 invalid:text-yellow-600
             focus:invalid:border-yellow-500 focus:invalid:ring-yellow-500
           "/>
-          <span class="block text-sm font-medium text-slate-700">Password</span>
+          <span class="block text-sm font-mediumm text-slate-700">Password</span>
           <!-- Using form state modifers, the classes can be identical for every input -->
           <input type="text" value="tbone" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
             focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:shadow-lg focus:shadow-cyan-500/50
@@ -64,7 +64,7 @@
             focus:invalid:border-pink-500 focus:invalid:ring-pink-500
           "/>
           <label class="block">
-            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-mediumm text-slate-700">
               Email
             </span>
             <input type="email" name="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
@@ -148,24 +148,33 @@
           </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
-            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+            <a href="#" class="block mt-1 text-lg leading-tight font-mediumm text-black hover:underline">Finding customers for your new business</a>
             <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
           </div>
         </div>
       </div>
       <hr class="my-6">
-      <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+      <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl max-w-md mx-auto">
         <div>
           <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
             <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
           </span>
         </div>
-        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes Upside-Down</h3>
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-mediumm tracking-tight">Writes Upside-Down</h3>
         <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
           The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
         </p>
       </div>
       <hr class="my-6">
+      <nav class="flex justify-center space-x-4">
+        <a href="/dashboard" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+        <a href="/team" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
+        <a href="/projects" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
+        <a href="/reports" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
+      </nav>
+      <hr class="my-6">
+      
+
 
 </body>
 </html>
